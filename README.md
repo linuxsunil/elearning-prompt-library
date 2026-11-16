@@ -196,6 +196,53 @@ This library integrates **60 learning theories** across six families:
 
 ---
 
+## 🎬 See It in Action
+
+Here's a real example using the **Bloom's Gap Analysis** prompt.
+
+**Step 1 — Paste this into Claude, ChatGPT, or Gemini:**
+
+```
+You are a senior instructional designer with deep expertise in Bloom's Taxonomy
+(revised Anderson & Krathwohl).
+
+Analyze the following course outline for cognitive level coverage:
+
+<outline>
+Module: Handling Customer Complaints
+Objectives:
+- Understand the company's complaint resolution policy
+- Know the steps to escalate a complaint
+- Appreciate why empathy matters in customer interactions
+</outline>
+
+Deliver:
+1. A table mapping each objective to its Bloom's level
+2. A gap analysis — which levels are missing or over-represented
+3. Three rewritten objectives that fill the most critical gaps
+```
+
+**Step 2 — The AI returns something like this:**
+
+| Objective | Bloom's Level | Issue |
+|-----------|--------------|-------|
+| "Understand the policy" | Remember/Understand | Vague verb — not measurable |
+| "Know the steps to escalate" | Remember | Too low for a performance goal |
+| "Appreciate why empathy matters" | Understand | "Appreciate" is immeasurable |
+
+**Gap:** All three objectives sit at the bottom two levels (Remember/Understand). No Apply, Analyze, or Evaluate — which means the course won't build real job performance.
+
+**Rewritten objectives:**
+1. *Apply* the 5-step complaint resolution policy to resolve a customer issue within SLA
+2. *Demonstrate* the correct escalation path for a Level 2 complaint using the case management system
+3. *Evaluate* a recorded customer interaction and identify two empathy techniques used or missed
+
+---
+
+That's the difference between AI-generated content and theory-grounded design.
+
+---
+
 ## ⚡ Quick Start
 
 **1. Find your prompt**
@@ -301,8 +348,9 @@ Quick contribution checklist:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sunil-iyer-b545964/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/linuxsunil)
 
+**Previously:** Thomson Reuters · NIIT Limited  
 **Specialties:** Articulate Rise 360/Storyline 360 · SCORM/xAPI · AI/ML Course Development  
-
+**Published on:** Coursera · Udemy
 
 > *"Good eLearning isn't about tools — it's about theory applied with intent. This library exists to make that accessible to everyone building with AI."*
 
