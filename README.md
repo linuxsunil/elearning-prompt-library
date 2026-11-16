@@ -348,9 +348,7 @@ Quick contribution checklist:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sunil-iyer-b545964/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/linuxsunil)
 
-**Previously:** Thomson Reuters · NIIT Limited  
 **Specialties:** Articulate Rise 360/Storyline 360 · SCORM/xAPI · AI/ML Course Development  
-**Published on:** Coursera · Udemy
 
 > *"Good eLearning isn't about tools — it's about theory applied with intent. This library exists to make that accessible to everyone building with AI."*
 
