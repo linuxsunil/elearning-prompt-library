@@ -3,7 +3,8 @@
 **Category:** Assessment  
 **Target Tool:** Claude  
 **Framework:** Role + Bloom's + Format Constraint  
-**Use When:** Building a full question bank for a module or certification, covering multiple Bloom's levels
+**Use When:** Building a full question bank for a module or certification, covering multiple Bloom's levels  
+**Theory applied:** Retrieval Practice / Testing Effect (#54) primary — Rationale: Regular, varied retrieval of information from memory is one of the most evidence-backed methods for long-term retention; a well-designed question bank supports this. Secondary: Interleaving (#53) — mixing question types and topics across the bank improves retention compared to blocked practice on one objective at a time.
 
 ---
 
@@ -18,34 +19,38 @@ Generate a question bank for the following module:
 Topic: [TOPIC]
 Audience: [AUDIENCE]
 Learning objectives:
-  1. [OBJECTIVE 1]
-  2. [OBJECTIVE 2]
-  3. [OBJECTIVE 3]
+  LO-01: [OBJECTIVE USING REVISED BLOOM'S VERB]
+  LO-02: [OBJECTIVE]
+  LO-03: [OBJECTIVE]
 Number of questions per objective: [e.g., 5]
 Question types needed: [MCQ / True-False / Matching / Fill-in-the-blank / Short scenario]
+Pass mark: [e.g., 80%]
 </module>
 
 For each question, provide:
-- Question ID (OBJ1-Q1, OBJ1-Q2, etc.)
-- Bloom's level (Remember / Understand / Apply / Analyze)
-- Question stem
-- Options (for MCQ: 1 correct + 3 distractors; label A–D)
-- Correct answer
-- Rationale (one sentence explaining why the correct answer is correct)
-- Difficulty: Easy / Medium / Hard
 
-Quality rules:
+| QID | LO | Bloom's Level | Type | Question Stem | Options (A/B/C/D) | Correct | Rationale | Difficulty |
+|-----|-----|--------------|------|--------------|-------------------|---------|-----------|-----------|
+
+Quality rules — apply to every item:
+- Minimum 4 options for MCQ; one clearly correct answer
 - No "all of the above" or "none of the above"
-- No negative phrasing ("which is NOT…") unless testing critical safety knowledge
-- Distractors must be plausible — no obviously silly options
-- Each question independently testable without reading other questions
+- No negatively phrased stems ("which is NOT...") unless testing critical safety knowledge — flag if used
+- Distractors must be plausible — no obviously wrong options
+- Each question independently testable (no "based on the previous question...")
+- Rationale is one sentence explaining why the correct answer is correct — use this as feedback text
+- Difficulty: Easy (Remember/Understand), Medium (Apply/Analyze), Hard (Evaluate/Create)
+- Interleave question types — do not group all MCQs together
 
-Output as a Markdown table, one question per row.
+After the bank:
+- Coverage summary: table showing how many items per LO and per Bloom's level
+- Flag any objective with fewer than 3 items as under-assessed
 ```
 
 ---
 
 ## Notes
-- The rationale field doubles as feedback text — paste directly into Storyline or Rise quiz settings
+- The rationale column doubles as feedback text — paste directly into Storyline or Rise quiz settings
 - For formal certifications, add: "Flag any question where the correct answer could be disputed by a SME"
-- Export the table to Excel using the xlsx skill for LMS import formatting
+- Export the table to Excel for LMS import formatting using the xlsx skill
+- For spaced retrieval campaigns, add: "Tag each item as Week 1 / Week 2 / Week 4 for a spaced repetition schedule"
